@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 臺灣極端氣候與天氣事件回顧與分析</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/banner.jpg" alt="2023 臺灣極端氣候與天氣事件回顧與分析">
+    </div>
+    <div class="content">
+        <div class="intro">
+            <h1>2023年，臺灣發布6次颱風警報，不僅是近十年來最多的一年，海葵颱風更終結了連續四年沒有颱風中心登陸臺灣本島的紀錄。本書詳細介紹侵臺颱風的路徑分類，並探討第四類、第七類及特殊侵臺路徑颱風對臺灣的影響。同時，收錄2023年1場寒流、6場颱風及0910嘉南地區淹水事件，瞭解各事件的發展歷程、低溫和風雨分析，以及衝擊影響。</h1>
+        </div>
+        <div class="promo-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oFMZNEFWw2M?si=XedLErZlkIh-rnP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+		</div>
+        <div class="image-container">
+            <img src="img/2.png" alt="颱風路徑分類">
+        </div>
+        <div class="buttons">
+            <button onclick="openInNewTab('2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html')">閱讀全文</button>
+            <button onclick="downloadPDF()">下載PDF</button>
+        </div>
+        
+        <!--<div class="knowledge">
+            <h3>氣象防災科普小知識</h3>
+            <div class="knowledge-content">
+                <div class="button-container">
+                    <ul>
+                        <li><button onclick="changeVideo('https://www.youtube.com/embed/VblzvFiVUTs?si=mZ726iHvpqnBYrl0')">侵臺颱風路徑分類</button></li>
+                        <li><button onclick="changeVideo('https://www.youtube.com/embed/6Pn56k8Ci5Q?si=bPm4UQb-6LJWFfht')">發布颱風警報標準</button></li>
+                        <li><button onclick="changeVideo('https://www.youtube.com/embed/aU5hn6DyHXY?si=86hPShKVlqrY9q1k')">藤原效應</button></li>
+                    </ul>
+                </div>
+                <div class="video-container">
+                    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/VblzvFiVUTs?si=mZ726iHvpqnBYrl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>-->
+        
+        
+        <div class="history">
+		<h3>歷年專書</h3>
+            <a href="https://watch.ncdr.nat.gov.tw/ebook/18/" target="_blank">
+                <img src="img/p2-6.jpg" alt="2022">
+                <div class="caption">2022年專書</div>
+            </a>
+            <a href="https://watch.ncdr.nat.gov.tw/ebook/16/" target="_blank">
+                <img src="img/p2-1.jpg" alt="2021">
+                <div class="caption">2021年專書</div>
+            </a>
+            <a href="https://watch.ncdr.nat.gov.tw/ebook/17/" target="_blank">
+                <img src="img/p2-2.jpg" alt="2021">
+                <div class="caption">2021年專書</div>
+            </a>
+            <a href="https://watch.ncdr.nat.gov.tw/ebook/14/" target="_blank">
+                <img src="img/p2-3.jpg" alt="2020">
+                <div class="caption">2020年專書</div>
+            </a>
+            <a href="https://watch.ncdr.nat.gov.tw/ebook/12/" target="_blank">
+                <img src="img/p2-4.jpg" alt="2019">
+                <div class="caption">2019年專書</div>
+            </a>
+            <a href="https://watch.ncdr.nat.gov.tw/ebook/13/" target="_blank">
+                <img src="img/p2-5.jpg" alt="2018">
+                <div class="caption">2018年專書</div>
+            </a>
+        </div>
+    
+    
+    <footer>
+        <p>Copyright © 國家災害防救科技中心 氣象組 2024</p>
+    </footer>
+
+    <script>
+        function openInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+
+        function downloadPDF() {
+            var pdfUrl = '2023台灣極端氣候與天氣事件回顧與分析.pdf'; 
+            window.open(pdfUrl, '_blank');
+        }
+
+        function changeVideo(videoUrl) {
+            var iframe = document.getElementById('videoPlayer');
+            iframe.src = videoUrl;
+        }
+    </script>
+</body>
+</html>
