@@ -351,7 +351,7 @@ footer p {
     }
 
     .knowledge h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .button-container button {
@@ -364,23 +364,26 @@ footer p {
         max-width: 100%;
         height: auto;
     }
-	.history {
-		text-align: center;
-	}
+	 .history {
+        text-align: center;
+        padding: 10px;
+    }
 
-	.history a {
-		display: block;
-		margin: 10px auto;
-	}
+    .history a {
+        display: block;
+        margin: 10px auto;
+    }
 
-	.history img {
-		max-width: 30%;
-		height: auto;
-	}
+    .history img {
+        max-width: 50%;
+        height: auto;
+    }
 
-	.history .caption {
-		font-size: 12px; 
-	}
+    .history .caption {
+        font-size: 12px; 
+        padding: 5px;
+    }
+}
     .history h3 {
         font-size: 20px;
     }
