@@ -312,11 +312,29 @@ footer p {
         padding: 10px;
     }
 
-    .promo-video iframe,
-    .video-container iframe {
+    .promo-video iframe{
         width: 100%;
         height: auto;
     }
+	.video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+    position: relative;
+    overflow: hidden;
+}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
 
     .intro h1 {
         font-size: 20px;
@@ -354,23 +372,20 @@ footer p {
     footer p {
         font-size: 14px;
     }
-
     .sidebar {
         width: 200px;
         right: -200px;
+        transition: right 0.3s; 
     }
 
     .sidebar.open-sidebar {
-        right: 0; 
-    }
-
-    .sidebar a {
-        font-size: 16px;
-        padding: 8px 12px;
+        right: 0;
     }
 
     .sidebar-btn {
         font-size: 24px;
         padding: 3px 7px;
+        z-index: 1001;
     }
 }
+
