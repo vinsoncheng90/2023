@@ -254,6 +254,7 @@ body {
     text-decoration: none;
     color: inherit;
     position: relative;
+	text-align: center;
     transition: transform 0.3s;
 }
 
@@ -372,18 +373,19 @@ footer p {
     .history a {
         display: block;
         margin: 10px auto;
-    }
+		position: relative;
+		text-align: center; 
 
     .history img {
-        max-width: 70%;
+        max-width: 80%;
         height: auto;
     }
 
     .history .caption {
-        font-size: 12px; 
-        padding: 5px;
-    }
-}
+        font-size: 10px; 
+        padding: 3px;
+
+	}
     .history h3 {
         font-size: 20px;
     }
