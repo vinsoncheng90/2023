@@ -7,26 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+	<div id="sidebar" class="sidebar">
+			<a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">×</a>
+			<a href="#section1">介紹</a>
+			<a href="#section2">閱讀與下載</a>
+			<a href="#section3">氣象防災小知識</a>
+			<a href="#section4">侵颱風路徑分類</a>
+			<a href="#section5">歷年專書</a>
+	</div>
+    <div id="sidebar-btn" class="sidebar-btn" onclick="toggleSidebar()">&#61;</div>
+	
     <div class="header">
         <img src="img/banner.jpg" alt="2023 臺灣極端氣候與天氣事件回顧與分析">
     </div>
     <div class="content">
-        <div class="intro">
-            <h1>2023年，臺灣發布6次颱風警報，不僅是近十年來最多的一年，海葵颱風更終結了連續四年沒有颱風中心登陸臺灣本島的紀錄。本書詳細介紹侵臺颱風的路徑分類，並探討第四類、第七類及特殊侵臺路徑颱風對臺灣的影響。同時，收錄2023年1場寒流、6場颱風及0910嘉南地區淹水事件，瞭解各事件的發展歷程、低溫和風雨分析，以及衝擊影響。</h1>
-        </div>
-        <div class="promo-video">
+	<div class="promo-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/oFMZNEFWw2M?si=XedLErZlkIh-rnP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-		</div>
-        <div class="image-container">
-            <img src="img/2.png" alt="颱風路徑分類">
-        </div>
-        <div class="buttons">
-            <button onclick="openInNewTab('2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html')">閱讀全文</button>
-            <button onclick="downloadPDF()">下載PDF</button>
+        <div id="section1" class="intro">
+            <h1>2023年，臺灣發布6次颱風警報，不僅是近十年來最多的一年，海葵颱風更終結了連續四年沒有颱風中心登陸臺灣本島的紀錄。本書詳細介紹侵臺颱風的路徑分類，並探討第四類、第七類及特殊侵臺路徑颱風對臺灣的影響。同時，收錄2023年1場寒流、6場颱風及0910嘉南地區淹水事件，瞭解各事件的發展歷程、低溫和風雨分析，以及衝擊影響。</h1>
         </div>
         
-        <!--<div class="knowledge">
+		</div>
+        
+		<div id="section2" class="buttons">
+			<div class="button-item">
+				<img src="img/page-0001.jpg" alt="閱讀全文" onclick="openInNewTab('2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html')">
+				<div class="button-text">閱讀全文</div>
+			</div>
+			<div class="button-item">
+				<img src="img/page-001.jpg" alt="下載PDF" onclick="downloadPDF()">
+				<div class="button-text">下載PDF</div>
+			</div>
+		</div>
+		<div id="section3" class="knowledge">
             <h3>氣象防災科普小知識</h3>
             <div class="knowledge-content">
                 <div class="button-container">
@@ -40,10 +55,13 @@
                     <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/VblzvFiVUTs?si=mZ726iHvpqnBYrl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>-->
-        
-        
-        <div class="history">
+        </div>
+		
+		<div id="section4" class="image-container">
+            <img src="img/2.png" alt="颱風路徑分類">
+        </div>
+		
+        <div id="section5"class="history">
 		<h3>歷年專書</h3>
             <a href="https://watch.ncdr.nat.gov.tw/ebook/18/" target="_blank">
                 <img src="img/p2-6.jpg" alt="2022">
@@ -77,6 +95,18 @@
     </footer>
 
     <script>
+		function toggleSidebar() {
+			var sidebar = document.getElementById("sidebar");
+			var btn = document.getElementById("sidebar-btn");
+
+			if (sidebar.classList.contains("open-sidebar")) {
+				sidebar.classList.remove("open-sidebar");
+				btn.style.display = "block";
+			} else {
+				sidebar.classList.add("open-sidebar");
+				btn.style.display = "none";
+			}
+		}
         function openInNewTab(url) {
             var win = window.open(url, '_blank');
             win.focus();

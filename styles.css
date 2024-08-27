@@ -5,6 +5,56 @@ body {
     background: url('img/70758591_xl.jpg') no-repeat center center;
     background-size: cover;
 }
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.sidebar-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.open-sidebar {
+    right: 0;
+}
 
 .header {
     text-align: center; 
@@ -53,6 +103,31 @@ body {
     margin-bottom: 20px;
 }
 
+.button-item {
+    display: inline-block;
+    margin: 0 30px; 
+    text-align: center;
+    position: relative; 
+}
+
+.button-item img {
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.button-item:hover img {
+    transform: scale(1.1); 
+}
+
+.button-text {
+    margin-top: 10px;
+    font-size: 20px; 
+    color: #333;
+}
+
+
 .buttons button {
     background-color: #FF6F61;
     color: white;
@@ -86,12 +161,12 @@ body {
 }
 
 .image-container img {
-    max-width: 106%; 
+    max-width: 100%; 
     height: auto; 
     border: none; 
 }
 
-/*.knowledge {
+.knowledge {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -161,7 +236,7 @@ body {
     width: 560px;
     height: 315px;
     border: none;
-}*/
+}
 
 .history h3 {
    text-align: left;
@@ -229,20 +304,69 @@ footer {
 footer p {
     margin: 0;
     color: white;
+	font-size:16px;
 }
 
-/*@media (max-width: 768px) {
-    .knowledge-content {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
     }
 
-    .button-container,
-    .video-container {
-        width: 100%;
-    }
-
+    .promo-video iframe,
     .video-container iframe {
+        width: 100%;
         height: auto;
     }
-}*/
+
+    .intro h1 {
+        font-size: 20px;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .knowledge {
+        padding: 10px;
+    }
+
+    .knowledge h3 {
+        font-size: 20px;
+    }
+
+    .button-container button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .image-container img,
+    .history img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .history h3 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        width: 200px;
+        right: -200px;
+    }
+
+    .sidebar a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .sidebar-btn {
+        font-size: 24px;
+        padding: 3px 7px;
+    }
+}
