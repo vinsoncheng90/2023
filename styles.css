@@ -526,45 +526,34 @@ footer p {
         padding: 3px 7px;
         z-index: 1001;
     }
-  .floating-menu {
+   .floating-menu {
         width: 100%;
         left: 0;
         transform: none;
-        bottom: 20px;
     }
 
     .main-button {
-        width: 100px;
-        height: 50px; 
+        width: 120px;
+        height: 50px;
         font-size: 14px;
-        border-radius: 25px;
     }
 
     .menu {
         width: 100%;
-        bottom: 70px; 
-        left: 0;
-        padding: 15px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-wrap: nowrap; 
-        overflow-x: auto; 
-        gap: 8px;
-        justify-content: center; 
-    }
+        bottom: 70px;
+        padding: 10px;
+        max-height: 300px;
 
     .menu-button {
+        width: 100px;
+        height: 40px;
         font-size: 12px;
-        padding: 8px;
-        min-width: 100px;
-        display: flex;
-        align-items: center;
     }
 
     .menu-button img {
-        width: 24px;
-        height: 24px; 
-}
+        width: 30px; 
+        height: 30px;
+    }
 }
 }
 
