@@ -20,6 +20,7 @@ body {
 }
 
 
+
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
@@ -43,6 +44,7 @@ body {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    z-index: 1001;
 }
 
 .close-btn {
@@ -57,6 +59,7 @@ body {
 }
 
 .header {
+    position: relative; 
     text-align: center; 
     margin-bottom: 20px; 
 }
@@ -72,6 +75,25 @@ body {
     object-fit: contain; 
 }
 
+.banner-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+    z-index: 10; 
+    transition: transform 0.3s ease;
+    transform: scale(0.6);
+}
+
+.banner-btn:hover {
+    transform: scale(0.7); 
+}
+
+
+
+
 .content {
     padding: 20px;
     max-width: 1200px;
@@ -83,7 +105,7 @@ body {
 }
 
 .intro h1 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .promo-video {
@@ -102,6 +124,14 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
+.buttons h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    margin-left: 290px; 
+}
+
 
 .button-item {
     display: inline-block;
@@ -123,8 +153,8 @@ body {
 
 .button-text {
     margin-top: 10px;
-    font-size: 20px; 
-    color: #333;
+    font-size: 20px;
+    color: black;
 }
 
 
@@ -300,12 +330,103 @@ footer {
     margin-top: 20px;
     margin: 0;
     min-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-btn img {
+    height: 25px;
+    width: auto;
+    vertical-align: middle; 
 }
 
 footer p {
     margin: 0;
     color: white;
-	font-size:16px;
+    font-size: 16px;
+}
+
+.floating-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+	opacity: 0.8;
+}
+
+.main-button {
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+	transition: transform 0.3s ease;
+}
+
+.main-button:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 600px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+	width: 170px;
+    height: 60px;
+	transition: transform 0.3s ease;
+}
+
+.menu-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.menu-button span {
+    font-size: 14px;
+}
+
+.menu-button:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 @media (max-width: 768px) {
@@ -404,6 +525,39 @@ footer p {
         font-size: 24px;
         padding: 3px 7px;
         z-index: 1001;
+    }
+	 .floating-menu {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .main-button {
+        width: 100px; 
+        height: 50px; 
+        font-size: 14px;
+        border-radius: 25px;
+    }
+
+    .menu {
+        width: 100%; 
+        bottom: 70px; 
+        left: 0;
+        padding: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px;
+    }
+
+    .menu-button {
+        font-size: 12px; 
+        padding: 8px;
+    }
+
+    .menu-button img {
+        width: 24px; 
+        height: 24px; 
     }
 }
 

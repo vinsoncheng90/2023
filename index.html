@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 	<div id="sidebar" class="sidebar">
 			<a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">×</a>
 			<a href="#section1">介紹</a>
@@ -20,18 +19,19 @@
 	
     <div class="header">
         <img src="img/banner.jpg" alt="2023 臺灣極端氣候與天氣事件回顧與分析">
+		<img src="img/0827__WATCH.png" alt="按鈕圖標" class="banner-btn" onclick="openLink('https://watch.ncdr.nat.gov.tw/')">
     </div>
     <div class="content">
 	<div class="promo-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oFMZNEFWw2M?si=XedLErZlkIh-rnP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="video/01_成果影片-4.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div id="section1" class="intro">
-            <h1>2023年，臺灣發布6次颱風警報，不僅是近十年來最多的一年，海葵颱風更終結了連續四年沒有颱風中心登陸臺灣本島的紀錄。本書詳細介紹侵臺颱風的路徑分類，並探討第四類、第七類及特殊侵臺路徑颱風對臺灣的影響。同時，收錄2023年1場寒流、6場颱風及0910嘉南地區淹水事件，瞭解各事件的發展歷程、低溫和風雨分析，以及衝擊影響。</h1>
+            <h1>2023年，臺灣發布6次颱風警報，不僅是近十年來最多的一年，海葵颱風更終結了連續四年沒有颱風中心登陸臺灣本島的紀錄。<br />本書詳細介紹侵臺颱風的路徑分類，並探討第四類、第七類及特殊侵臺路徑颱風對臺灣的影響。同時，收錄2023年1場寒流、<br />6場颱風及0910嘉南地區淹水事件，瞭解各事件的發展歷程、低溫和風雨分析，以及衝擊影響。</h1>
         </div>
         
 		</div>
-        
 		<div id="section2" class="buttons">
+			<h3>閱讀與下載</h3>
 			<div class="button-item">
 				<img src="img/page-0001.jpg" alt="閱讀全文" onclick="openInNewTab('2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html')">
 				<div class="button-text">閱讀全文</div>
@@ -46,13 +46,13 @@
             <div class="knowledge-content">
                 <div class="button-container">
                     <ul>
-                        <li><button onclick="changeVideo('https://www.youtube.com/embed/VblzvFiVUTs?si=mZ726iHvpqnBYrl0')">侵臺颱風路徑分類</button></li>
-                        <li><button onclick="changeVideo('https://www.youtube.com/embed/6Pn56k8Ci5Q?si=bPm4UQb-6LJWFfht')">發布颱風警報標準</button></li>
-                        <li><button onclick="changeVideo('https://www.youtube.com/embed/aU5hn6DyHXY?si=86hPShKVlqrY9q1k')">藤原效應</button></li>
+                        <li><button onclick="changeVideo('video/02_颱風路徑-4.mp4')">侵臺颱風路徑分類</button></li>
+                        <li><button onclick="changeVideo('video/03_颱風警報-3.mp4')">發布颱風警報標準</button></li>
+                        <li><button onclick="changeVideo('video/04_藤原效應-3.mp4')">藤原效應</button></li>
                     </ul>
                 </div>
                 <div class="video-container">
-                    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/VblzvFiVUTs?si=mZ726iHvpqnBYrl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe id="videoPlayer" width="560" height="315" src="video/02_颱風路徑-4.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -88,9 +88,60 @@
                 <div class="caption">2018年專書</div>
             </a>
         </div>
-    
-    
+			<div class="floating-menu">
+		<button id="toggleButton" class="main-button">內文目錄</button>
+		<div id="menu" class="menu" style="display: none;">
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 1">
+				<span>侵臺颱風的路徑分類</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 2">
+				<span>專欄<br />第四類和第七類侵臺<br />路徑颱風的風雨分布</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 3">
+				<span>專欄<br />特殊侵臺路徑<br />颱風回顧</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 4">
+				<span>事件回顧<br />2023年寒流事件</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 5">
+				<span>事件回顧<br />瑪娃颱風</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 6">
+				<span>事件回顧<br />杜蘇苪颱風</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顱與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 7">
+				<span>事件回顧<br />卡奴颱風</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 8">
+				<span>事件回顧<br />蘇拉颱風</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 9">
+				<span>事件回顧<br />海葵颱風</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 10">
+				<span>事件回顧<br />0910嘉南地區<br />淹水事件</span>
+			</a>
+			<a href="2023台灣極端氣候與天氣事件回顧與分析/2023台灣極端氣候與天氣事件回顧與分析.html" class="menu-button" target="_blank">
+				<img src="img/0827__颱風.png" alt="Image 11">
+				<span>事件回顧<br />小犬颱風</span>
+			</a>
+		</div>
+	</div>
+	
     <footer>
+		 <a href="https://watch.ncdr.nat.gov.tw/" target="_blank" class="footer-btn">
+			<img src="img/ncdr-logo.png" alt="Footer Button">
+		</a>
         <p>Copyright © 國家災害防救科技中心 氣象組 2024</p>
     </footer>
 
@@ -121,6 +172,41 @@
             var iframe = document.getElementById('videoPlayer');
             iframe.src = videoUrl;
         }
+		 function openLink(url) {
+            window.open(url, '_blank');
+        }
+			
+		document.getElementById('toggleButton').addEventListener('click', function() {
+			var menu = document.getElementById('menu');
+			var button = document.getElementById('toggleButton');
+			if (menu.style.display === 'grid') {
+				menu.style.display = 'none';
+				button.textContent = '內文目錄';
+				button.style.backgroundColor = '#007bff';
+			} else {
+				menu.style.display = 'grid';
+				button.textContent = '關閉';
+				button.style.backgroundColor = '#ff4d4d';
+			}
+		});
+
+		window.onload = function() {
+			document.getElementById('menu').style.display = 'none';
+		};
+
+		var floatingMenu = document.querySelector('.floating-menu');
+		var footer = document.querySelector('footer'); 
+
+		window.addEventListener('scroll', function() {
+			var footerRect = footer.getBoundingClientRect();
+			var windowHeight = window.innerHeight;
+
+			if (footerRect.top <= windowHeight) {
+				floatingMenu.classList.add('hidden');
+			} else {
+				floatingMenu.classList.remove('hidden');
+			}
+		});
     </script>
 </body>
 </html>
