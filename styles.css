@@ -421,6 +421,9 @@ footer p {
     transform: scale(1.05);
 }
 
+
+
+
 .hidden {
     opacity: 0;
     visibility: hidden;
@@ -523,10 +526,11 @@ footer p {
         padding: 3px 7px;
         z-index: 1001;
     }
- .floating-menu {
+  .floating-menu {
         width: 100%;
         left: 0;
         transform: none;
+        bottom: 20px;
     }
 
     .main-button {
@@ -537,15 +541,16 @@ footer p {
     }
 
     .menu {
-        width: 100%; 
-        bottom: 70px;
+        width: 100%;
+        bottom: 70px; 
         left: 0;
         padding: 15px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
         gap: 8px;
+        justify-content: center; 
     }
 
     .menu-button {
@@ -558,8 +563,8 @@ footer p {
 
     .menu-button img {
         width: 24px;
-        height: 24px;
-    }
+        height: 24px; 
+}
 }
 }
 
