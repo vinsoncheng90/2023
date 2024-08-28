@@ -355,7 +355,6 @@ footer p {
     transform: translateX(-50%);
     z-index: 1000;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-	opacity: 0.8;
 }
 
 .main-button {
@@ -368,6 +367,7 @@ footer p {
     cursor: pointer;
     font-size: 20px;
 	transition: transform 0.3s ease;
+	opacity: 0.8;
 }
 
 .main-button:hover {
@@ -526,14 +526,14 @@ footer p {
         padding: 3px 7px;
         z-index: 1001;
     }
-	 .floating-menu {
+ .floating-menu {
         width: 100%;
         left: 0;
         transform: none;
     }
 
     .main-button {
-        width: 100px; 
+        width: 100px;
         height: 50px; 
         font-size: 14px;
         border-radius: 25px;
@@ -541,23 +541,28 @@ footer p {
 
     .menu {
         width: 100%; 
-        bottom: 70px; 
+        bottom: 70px;
         left: 0;
         padding: 15px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         gap: 8px;
     }
 
     .menu-button {
-        font-size: 12px; 
+        font-size: 12px;
         padding: 8px;
+        min-width: 100px;
+        display: flex;
+        align-items: center;
     }
 
     .menu-button img {
-        width: 24px; 
-        height: 24px; 
+        width: 24px;
+        height: 24px;
     }
+}
 }
 
